@@ -1,0 +1,45 @@
+Logiciel pour devis + Préparer quantités pour commandes 
+
+Variables : 
+ex : Rideaux 
+ - largeur tringle, type tringle, ampleur (quelle quantité de tissu pour 1 mètre de tringle, avec ampleur = cas par cas)
+type tringle détermine le type de confection (4 ou 5 types pour type de tringle)
+
+
+ex : tringle de 1 mètre --> 1 rideau de 1 mètre. Pour une ampleur de 1,4 m pas de soucis. 
+						  Si hauteur < 2,80 ou 3 m, on met à la verticale et on le déroule sur la longueur de la tringle
+
+
+
+tissus vendus en 1 m 40, 1 m 50, 2 m 80, 2 m 90 et 3 m --> Pour 1,40 et 1,50 pas de soucis, sinon cas par cas pour 2,80 ou 3 m
+
+lé = 1m40 --> achat de tissu en laize
+
+Si ampleur = 2m --> besoin d'1 lé de 1m 40 + 70 cm sachant que on achète des tissus seulement en lé
+
+Tringle de 1 m 60, tissu de 1m 40 
+
+1 m 60, 2 m 80 --> 1 m 20 de restant 
+ampleur = 2,80 / 1 m 60 --> 1,75 
+2 m, ampleur de 1,5 avec tissus en 1 m 50 + retours (donnée à rentrer)  --> On veut 3 lé 
+Si on veut une ampleur de 2, 4 m de tissus pour couvrir le tringle de 2 m. 
+Ici, on souhaite en 2 rideaux, donc on doit rajouter 1 lé de tissus donc 3 lé. On veut 2 retours de 10 cm donc on perd 10 cm pur chaque lé --> 2 lé de 1 m 40
+
+Ourlets : 
+
+Pour une tringle de 1 m avec lé de 1 m 40, on commande 2 m 80 de tissu (2 m 50 + 3à) de hauteur sous plafond. On en vend 3 m piur la tringle de 1 m 60. 
+Ici ampleur 1 m 75 
+
+Pour une tringle de 2 m avec une ampleur de 2,5 et tissu vendu en 1 m 50, besoin de 2 lé --> on commande 2 x 2m80 et on vend 2x 3m
+
+Si on vend une ampleur 2,2 on achète 3 lés (gauche, droit, et 1 qu on coupe au milieu pour rajouter à gauche et à droite)
+
+Ordre parcours client : 
+
+Le client rentre largeur rideaux
+Le client rentre la hauteur
+Le client rentre le type de tringle (déroulant) qui ouvre possibilités sur types de confection ( à sélectionner par le client) (déroulant) et sélectionne ampleur (déroulant)
+Le client sélectionne si il veut le rideau et 1 ou 2 morceaux
+--> On veut le tarif de vente de la confection d'une part, de la tringle d'autre part et tarif vente + quantités calculées du tissus
+
+A terme générer un Bon de Commande 
